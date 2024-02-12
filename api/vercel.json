@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api",
+        "use": "@vercel/node", 
+        "config": {
+          "command": "npm run build:api", 
+          "entrypoint": "server.js",
+          "environment": {
+           
+          }
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)", 
+        "dest": "api/(.*)" 
+      }
+    ]
+  }
+  
