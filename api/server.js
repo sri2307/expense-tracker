@@ -30,4 +30,6 @@ sequelize.sync()
     console.error('Error synchronizing models:', error);
   });
 
+  module.exports=app;
+
 
